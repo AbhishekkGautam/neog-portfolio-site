@@ -109,6 +109,9 @@ hr {
   .nav-brand {
     display: none;
   }
+  .navigation {
+    padding: 0.5rem 0rem;
+  }
 }
 .link-active {
   font-weight: bold;
