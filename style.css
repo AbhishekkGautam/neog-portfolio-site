@@ -40,26 +40,37 @@ hr {
   margin-bottom: 0.1rem;
 }
 
+.article p {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.article time {
+  font-size: 14px;
+  color: gray;
+}
+
+.article a {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Blog */
+
+.blog {
+  margin-top: 5rem;
+}
+
 .blog h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   margin-top: 0;
 }
 
-.article p {
-  font-size: 16px;
-  margin-bottom: 1.5rem;
-}
-
 .blog p {
   font-size: 1.1rem;
   line-height: 1.8rem;
   text-align: justify;
-}
-
-.article time {
-  font-size: 14px;
-  color: gray;
 }
 
 .blog time {
@@ -82,9 +93,13 @@ hr {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.article a {
-  font-size: 1rem;
-  font-weight: normal;
+@media only screen and (max-width: 520px) {
+  .blog {
+    margin-top: 3.5rem;
+  }
+  .blog img {
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* links */
