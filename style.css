@@ -70,6 +70,8 @@ hr {
 .blog img {
   margin-top: 3rem;
   margin-bottom: 1.8rem;
+  max-width: auto;
+  width: 100%;
 }
 .blog pre {
   font-size: 0.8rem;
@@ -176,6 +178,11 @@ hr {
   .hero {
     padding-top: 3rem;
   }
+  /* .blog img {
+    max-width: auto;
+    max-height: auto;
+    width: 100%;
+  } */
 }
 
 .hero .hero-heading {
