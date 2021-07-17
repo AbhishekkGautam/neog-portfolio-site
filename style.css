@@ -27,7 +27,7 @@ hr {
 
 /* ol */
 .size-of-number li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 4rem;
 }
 
@@ -40,15 +40,44 @@ hr {
   margin-bottom: 0.1rem;
 }
 
+.blog h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
 .article p {
   font-size: 16px;
   margin-bottom: 1.5rem;
 }
 
+.blog p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
 .article time {
   font-size: 14px;
-  margin-bottom: 0.5rem;
   color: gray;
+}
+
+.blog time {
+  font-size: 16px;
+  color: gray;
+}
+
+.blog img {
+  margin-top: 3rem;
+  margin-bottom: 1.8rem;
+}
+.blog pre {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.blog code {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .article a {
@@ -90,7 +119,7 @@ hr {
 
 /* nav */
 .navigation {
-  background-color: var(--primary-color);
+  background-color: var(--dark-blue);
   color: white;
   display: flex;
   padding: 0.5rem 2rem;

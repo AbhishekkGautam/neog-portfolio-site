@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blogs | Abhishek Gautam</title>
-	<link rel="stylesheet" href="./style.css">
+	<title>Asynchronous Javascript | Abhishek Gautam</title>
+	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,35 +20,56 @@
 				<a href="/" class="link ">Home</a>
 			</li>
 			<li class="list-item-inline">
-				<a href="projects.html" class="link">Projects</a>
+				<a href="../projects.html" class="link">Projects</a>
 			</li>
 			<li class="list-item-inline">
-				<a href="blogs.html" class="link link-active">Blogs</a>
+				<a href="../blogs.html" class="link link-active">Blogs</a>
 			</li>
 		</ul>
 	</nav>
-	<header class="hero">
 
-		<h1 class="hero-heading">My <span class="heading-highlight">Blogs</span> ✍️</h1>
-	</header>
-	<section class="section ow container-center">
+	<section>
 		<div class="container container-center section-center">
-			<h1>Asynchronous JavaScript</h1>
-			<p>In this article, we'll look into the asynchronous nature of JavaScript that does not allow any task to
-				block the main thread...</p>
-			<a href="./blogs/asynchronous-javascript.html" class="link link-primary">Read It</a>
+			<header class="hero"></header>
+			<div class="blog">
+				<h1>Asynchronous JavaScript</h1>
+				<time>July 16, 2021</time>
+				<img src="../images/Asynchronous.png" alt="">
+				<p>When we write synchronous JavaScript code, we’re
+					providing a list of instructions that execute immediately in order. For example, if we wanted to use
+					JavaScript to handle some simple DOM
+					manipulation, we’d write the code to do so like this:
+				</p>
+				<h2>Promises with Fetch</h2>
+				<p>Making a request to a REST API used to be pretty cumbersome. We’d
+					have to write 20+ lines of nested code just to load some data into our
+					app. Then the fetch() function showed up and simplified our lives.
+				</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	const getFakePerson = async () => {
+		try {
+			let res = await fetch("abc.com")
+			let { results } = res.json();
+			console.log(results)
+		}
+	}
+
+	getFakePerson();
+</code>
+</pre>
+				<p>Making a request to a REST API used to be pretty cumbersome. We’d
+					have to write 20+ lines of nested code just to load some data into our
+					app. Then the fetch() function showed up and simplified our lives.
+				</p>
+			</div>
+
 		</div>
 
 	</section>
-	<section class="section container-center">
-		<div class="container container-center section-center">
-			<h1>My First Blog</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam maxime non velit id
-				necessitatibus officiis beatae nostrum laudantium molestiae eum illum reprehenderit.</p>
-			<a href="/" class="link link-primary">Read It</a>
-		</div>
 
-	</section>
+
+
 	<footer class="footer">
 		<div class="footer-header">Connect with me on</div>
 		<ul class="social-links list-non-bullet">
