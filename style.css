@@ -144,6 +144,9 @@ hr {
   .hero-img {
     max-width: 320px;
   }
+  .hero {
+    padding-top: 3rem;
+  }
 }
 
 .hero .hero-heading {
