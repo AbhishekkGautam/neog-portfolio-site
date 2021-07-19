@@ -62,7 +62,7 @@ hr {
 }
 
 .blog h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   margin-top: 0;
 }
@@ -104,6 +104,9 @@ hr {
   }
   .blog time {
     font-size: 14px;
+  }
+  .blog h1 {
+    font-size: 2.5rem;
   }
 }
 
