@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Functions in JavaScript | Abhishek Gautam</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<nav class="navigation container">
+		<div class="nav-brand">Abhishek Gautam</div>
+		<ul class="list-non-bullet nav-pills">
+			<li class="list-item-inline">
+				<a href="/" class="link ">Home</a>
+			</li>
+			<li class="list-item-inline">
+				<a href="../projects.html" class="link">Projects</a>
+			</li>
+			<li class="list-item-inline">
+				<a href="../blogs.html" class="link link-active">Blogs</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section>
+		<div class="container container-center section-center">
+			<div class="blog">
+				<h1>Functions in JavaScript</h1>
+				<time>July 26, 2021 &#183; 4 min read</time>
+				<img src="../images/Asynchronous.png" alt="">
+				<p>A function is a mini-program that performs a task. In general, a program consists of INPUT,
+					PROCESSING, and OUTPUT. The
+					function takes care of processing.</p>
+				<p>Sometimes we want a particular program or task to execute repeatedly with different inputs each time.
+					Here comes the
+					role of a function that executes the processing logic with different input and output over and over
+					again.</p>
+				<p>Now you have a basic understanding about function, let's discuss how to create a function.</p>
+				<h2>Function Declaration</h2>
+				<p>"Declare a function" is just a rephrase of "Create a function"</p>
+				<p>
+					You need three things to create a simple function:
+				</p>
+				<ul>
+					<li>function keyword</li>
+					<li>name of the function</li>
+					<li>statement or logic</li>
+				</ul>
+
+				<p>Let's create a function -</p>
+
+
+				<pre class="language-javascript">
+<code class="language-javascript">
+	function add(){
+		<span class="comment">//statement</span>
+		console.log(2+3);
+	};
+</code>
+</pre>
+
+				<p>Above we start with the <em><b>function</b> </em>keyword, then name of the function <b>add</b> and
+					statements of
+					this function are defined
+					between the curly braces.
+				</p>
+				<h2>Function Call</h2>
+				<p>Once we've declared the function, we will call it to see the output.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	add();
+</code>
+</pre>
+				<p>This is all you need to do to invoke a function - <b>name of the function followed by
+						parentheses.</b></p>
+				<p>"Call a function" sometimes also rephrase as "Invoke a function"</p>
+				<p>Once invoked, we'll see the output in the console.</p>
+
+				<h2>Parameters & Arguments</h2>
+				<p>In the above function, we directly put the input value <em>2 and 3</em> in the statement. But what if
+					we
+					want to pass the input
+					values while calling the function.</p>
+				<p>Let's take an example.</p>
+				<p>First, we'll provide dynamic variables to the function which are called parameters.
+					These variables are just a placeholder that holds the input values pass-through function call.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	function add (firstNum, secondNum){
+		<span class="comment">// statement</span>
+		console.log(firstNum + secondNum);
+	};
+</code>
+</pre>
+				<p>Above we declared two parameters <em>firstNum & secondNum</em> inside the parentheses.
+
+					We'll use these parameters as variables inside the function definition.</p>
+				<p>Now we'll pass the input values to the function for processing.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	add(2,3);
+</code>
+</pre>
+
+
+				<p>Above we pass the input values 2 & 3 while invoking the function.
+
+					Here 2 & 3 are arguments. These values will be passed to the parameters which are then used to
+					process the output in the
+					statement.</p>
+
+				<p>Once the function is invoked, we'll see the output in the console.</p>
+
+				<h2>Default Parameters</h2>
+				<p>Sometimes we might forget to declare the function arguments. In that case, our program might give an
+					error and we'll not
+					get the expected output.</p>
+				<p>To avoid this situation, <b>Default parameters</b> are included in the ES6, so if a value is not
+					provided
+					for the argument, the
+					default value will be used.</p>
+
+				<pre class="language-javascript">
+<code class="language-javascript">
+	function add (firstNum = 1, secondNum = 6){
+		<span class="comment">// statement</span>
+		console.log(firstNum + secondNum);
+	};
+
+	<span class="comment">// Invoke the function</span>
+	add();
+</code>
+</pre>
+
+				<p>If we do not pass arguments to the add function, then it'll process the output using the default
+					values.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	<span class="comment">// Output</span>
+	1 + 6 = 7
+</code>
+</pre>
+				<h2>Return Statement</h2>
+				<p>In the introduction section, we discussed that generally a function contains processing logic.
+
+					Upto this point, our function contains both processing logic and output.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	function add (firstNum, secondNum){
+		<span class="comment">// statement</span>
+		console.log(firstNum + secondNum);
+	};
+</code>
+</pre>
+				<p>Processing part - firstNum + secondNum<br />
+
+					Ouput part - console.log()</p>
+
+				<p>Now we'll use the function to return a value and then we'll output the value outside the function.
+
+					Let's add a return statement.</p>
+
+				<pre class="language-javascript">
+<code class="language-javascript">
+	function add (firstNum, secondNum){
+		<span class="comment">// statement</span>
+		return firstNum + secondNum;
+	};
+</code>
+</pre>
+				<p>A return statement specifies the value returned by the function.
+
+					Let's invoke this function.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	add(2,3);
+</code>
+</pre>
+
+				<p>Now we want to see the expected output.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	console.log(add(2,3));
+</code>
+</pre>
+				<p>Just wrap the function call in a console.log().</p>
+				<h2>Function Expressions</h2>
+				<p>We can also use function expression to create a function. We just need to create the function as a
+					variable.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	const language = function(){
+		console.log("JavaScript");
+	};
+	
+	language();
+</code>
+</pre>
+				<p>The output is the same. <em>JavaScript</em> is logged in the console</p>
+				<h3>Hoisting</h3>
+				<p>Function declarations are hoisted. Till now, we are invoking the function after the declaration but
+					we can also invoke a function before we declare a
+					function.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	<span class="comment">// Invoking the function</span>
+	message();
+	
+	<span class="comment">// Function Declaration</span>
+	function message(){
+		console.log("Good Morning");
+	};
+</code>
+</pre>
+
+				<p>But we cannot do the same thing in <b>function expressions.</b></p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	<span class="comment">// Invoking the function</span>
+	message();
+	
+	<span class="comment">// Function Declaration</span>
+	const message = function(){
+		console.log("Good Morning");
+	};
+</code>
+</pre>
+
+				<p>This program will cause an error.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	<span style="color: #e44a4a;">TypeError: message is not a function</span>
+</code>
+</pre>
+
+				<h2>Arrow Functions</h2>
+				<p>Arrow function is an ES6 feature that allows us to create a function without using the
+					function keyword. We also often
+					don't need to use a return statement.</p>
+				<p>Let's take an example -</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	<span class="comment">// Normal function declaration</span>
+	function greeting(name){
+		return `Good morning, ${name}`;
+	};
+</code>
+</pre>
+
+				<p>Now we simplify the above function using an arrow function.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	<span class="comment">// Arrow function</span>
+	const greeting = name => `Good morning, ${name}`;
+</code>
+</pre>
+
+				<p>We now have the entire function declaration in one line. We remove the function and return keyword.
+					And also if there is
+					one argument, we can remove the parentheses around the arguments.</p>
+				<p>When a function takes more than one argument, arguments should be surrounded by parentheses.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	function greeting(message, name){
+		return `${message}, ${name}`;
+	};
+
+	<span class="comment">// Arrow function</span>
+	const greeting = (message, name) => `${message}, ${name}`;
+</code>
+</pre>
+
+				<p>We have one line function because it returns only one statement. If there are multiple lines of
+					statements then we'll
+					use curly braces.</p>
+				<pre class="language-javascript">
+<code class="language-javascript">
+	const add = (a,b) => {
+		let sum = a + b;
+		return sum;
+	}
+	
+	console.log(add(1,2));
+</code>
+</pre>
+
+				<h2>Conclusion</h2>
+				<p>I hope after reading this blog you will understand the basics of function in JavaScript. If you find
+					this blog as
+					helpful, don't forget to share it.</p>
+				<p>Thank you 🙂</p>
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+	<footer class="footer">
+		<div class="footer-header">Connect with me on</div>
+		<ul class="social-links list-non-bullet">
+			<li class="list-item-inline"><a class="link" href="https://github.com/AbhishekkGautam"><i
+						class="fab fa-github fa-2x"></i></a></li>
+			<li class="list-item-inline"><a class="link" href="https://twitter.com/helloAbhishekk"><i
+						class="fab fa-twitter fa-2x"></i></a></li>
+			<li class="list-item-inline"><a class="link"
+					href="https://www.linkedin.com/in/abhishek-gautam-54684a167/"><i
+						class="fab fa-linkedin-in fa-2x"></i></a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>
