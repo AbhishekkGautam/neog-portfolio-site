@@ -13,6 +13,11 @@ body {
   margin: 0px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 hr {
   margin: 2rem 0;
 }
@@ -114,39 +119,23 @@ hr {
   width: 100%;
 }
 .blog pre {
+  height: auto;
+  max-height: 300px;
+  overflow: auto;
+  word-break: normal !important;
+  word-wrap: normal !important;
+  white-space: pre !important;
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: #1f2a37;
   color: white;
   margin: 2rem 0rem;
   border-radius: 0.3rem;
+  padding: 0rem 1rem;
 }
 
 .blog code {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@media only screen and (max-width: 520px) {
-  .blog {
-    margin-top: 3rem;
-    padding: 0rem 0.8rem;
-  }
-  .blog img {
-    margin-top: 2.8rem;
-    margin-bottom: 1.2rem;
-  }
-  .blog time {
-    font-size: 14px;
-  }
-  .blog h1 {
-    font-size: 2.5rem;
-  }
-  .blog h2 {
-    font-size: 1.6rem;
-  }
-  .blog h3 {
-    font-size: 1.2rem;
-  }
 }
 
 /* links */
@@ -205,14 +194,6 @@ hr {
   padding-left: 0.5rem;
 }
 
-@media only screen and (max-width: 520px) {
-  .nav-brand {
-    display: none;
-  }
-  .navigation {
-    padding: 0.5rem 0rem;
-  }
-}
 .link-active {
   font-weight: bold;
 }
@@ -231,20 +212,6 @@ hr {
   max-width: 420px;
   display: block;
   margin: auto;
-}
-
-@media only screen and (max-width: 520px) {
-  .hero-img {
-    max-width: 320px;
-  }
-  .hero {
-    padding-top: 3rem;
-  }
-  /* .blog img {
-    max-width: auto;
-    max-height: auto;
-    width: 100%;
-  } */
 }
 
 .hero .hero-heading {
@@ -300,4 +267,39 @@ hr {
 
 .footer ul {
   padding-inline-start: 0px;
+}
+
+@media only screen and (max-width: 520px) {
+  .nav-brand {
+    display: none;
+  }
+  .navigation {
+    padding: 0.5rem 0rem;
+  }
+  .hero-img {
+    max-width: 320px;
+  }
+  .hero {
+    padding-top: 3rem;
+  }
+  .blog {
+    margin-top: 3rem;
+    padding: 0rem 0.8rem;
+  }
+  .blog img {
+    margin-top: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .blog time {
+    font-size: 14px;
+  }
+  .blog h1 {
+    font-size: 2.5rem;
+  }
+  .blog h2 {
+    font-size: 1.6rem;
+  }
+  .blog h3 {
+    font-size: 1.2rem;
+  }
 }
