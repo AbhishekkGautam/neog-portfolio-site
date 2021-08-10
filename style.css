@@ -24,11 +24,11 @@ hr {
 
 .mark-tag {
   font-size: 14px;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   background-color: #646464;
   color: white;
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  padding: 4px 6px;
 }
 
 /* container */
@@ -52,7 +52,7 @@ hr {
 
 .article h1 {
   font-size: 1.5rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .article p {
@@ -63,6 +63,7 @@ hr {
 .article time {
   font-size: 14px;
   color: gray;
+  margin-left: 0.5rem;
 }
 
 .article a {
@@ -150,6 +151,11 @@ hr {
   color: white;
 }
 
+.light-green-tag {
+  background-color: #a3e635;
+  color: black;
+}
+
 .blue-tag {
   background-color: #3b82f6;
 }
@@ -165,6 +171,7 @@ hr {
 }
 .yellow-tag {
   background-color: #f7df1e;
+  color: black;
 }
 .violet-tag {
   background-color: #5b21b6;
