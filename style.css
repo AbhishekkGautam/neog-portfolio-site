@@ -28,7 +28,7 @@ hr {
   background-color: #646464;
   color: white;
   border-radius: 5px;
-  padding: 4px 6px;
+  padding: 4px 5px;
 }
 
 /* container */
@@ -177,8 +177,17 @@ hr {
   background-color: #5b21b6;
   color: white;
 }
+.purple-tag {
+  background-color: #562765;
+  color: white;
+}
 .red-tag {
   background-color: #f64646;
+}
+
+.black-tag {
+  background-color: #222222;
+  color: #5ed4f4;
 }
 
 /* links */
