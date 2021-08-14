@@ -99,6 +99,10 @@ hr {
   /* text-align: justify; */
 }
 
+.blog a {
+  color: dodgerblue;
+}
+
 .blog ul li {
   font-size: 1.1rem;
   line-height: 2rem;
@@ -157,13 +161,16 @@ hr {
 }
 
 .blue-tag {
-  background-color: #3b82f6;
+  background-color: dodgerblue;
+  color: white;
 }
 .orange-tag {
-  background-color: #f97316;
+  background-color: #fb720f;
+  color: white;
 }
 .pink-tag {
-  background-color: #f472b6;
+  background-color: #f54aa2;
+  color: white;
 }
 .gray-tag {
   background-color: #52525b;
