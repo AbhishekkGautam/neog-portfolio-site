@@ -301,6 +301,18 @@ hr {
   margin-bottom: 0px;
 }
 
+.blog-section .blog-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-section a {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-right: 1rem;
+}
+
 .ow {
   background-color: var(--light-blue);
 }
